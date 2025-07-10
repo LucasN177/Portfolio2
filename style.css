@@ -479,28 +479,6 @@ input {
     box-shadow: 0 10px 25px rgba(0, 122, 255, 0.3);
 }
 
-/* Parallax Elements */
-.parallax-element {
-    position: absolute;
-    opacity: 0.1;
-    transition: all 0.3s ease;
-}
-
-.parallax-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-}
-
-.parallax-square {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, var(--accent-pink), var(--accent-orange));
-    border-radius: 20px;
-    transform: rotate(45deg);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {

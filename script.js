@@ -42,18 +42,6 @@ document.querySelectorAll('.scroll-fade, .scroll-slide-left, .scroll-slide-right
     observer.observe(el);
 });
 
-// Parallax Effect
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.parallax-element');
-    
-    parallaxElements.forEach((element, index) => {
-        const speed = (index + 1) * 0.5;
-        const yPos = scrolled * speed;
-        element.style.transform = `translateY(${yPos}px) rotate(${scrolled * 0.1}deg)`;
-    });
-});
-
 // Navbar Background on Scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
